@@ -121,6 +121,7 @@ body {
 
 .detail-image {
     width: 40%;
+    height: auto;
 }
 
 .thumbnail-image {
