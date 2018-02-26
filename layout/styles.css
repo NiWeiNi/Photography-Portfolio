@@ -1,0 +1,68 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+	color: #ebebeb;
+}
+
+body {
+	display: flex;
+}
+
+.FlexFirst {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	background-color: burlywood;
+	overflow: hidden;
+}
+
+.FlexColor {
+	background-color: crimson;
+	height: 50px;
+	width: 50px;
+	margin: 100px;
+}
+
+.FlexTwo {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+	width: 100%;
+	overflow: hidden;
+}
+
+.FlexWrapper {
+	background-color: indigo;
+	display: flex;
+	flex: 0 1 auto;
+	justify-content: center;
+	height: 200px;
+
+}
+
+.FlexWrapperTwo{
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	justify-content: center;
+	background-color: red;
+	width: 100%;
+}
+
+.FlexItems {
+	border: 1px solid #ebebeb;
+	background-color: #34005B;
+	display: flex;
+	height: 100px;
+}
+
+.FlexOne, .FlexThree, .FlexFour {
+	flex: 1 0 auto;
+}
+
+.FlexTwo{
+	flex: 1 0 auto;
+}
