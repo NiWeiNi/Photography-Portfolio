@@ -1,13 +1,15 @@
-const detail_image_selector = '[data-role="target"]';
-const detail_title_selector = '[data-role="title"]';
-const thumbnail_link_selector = '[data-role="trigger"]';
+const detailImageSelector = '[data-role="target"]';
+const detailTitleSelector = '[data-title="title"]';
+const thumbnailLinkSelector = '[data-role="trigger"]';
+
+// Set image and text of the detailed photo
 
 function setDetails(imageUrl, titleText) {
     'use strict';
-    var detailImage = document.querySelector(detail_image_selector);
+    var detailImage = document.querySelector(detailImageSelector);
     detailImage.setAttribute('src', imageUrl);
 
-    var detailTitle = document.querySelector(detail_title_selector);
+    var detailTitle = document.querySelector(detailTitleSelector);
     detailTitle.textContent = titleText;
 }
 
@@ -36,7 +38,7 @@ function addThumbClickHandler(thumb) {
 
 function getThumbnailsArray() {
     'use strict';
-    var thumbnails = document.querySelectorAll(thumbnail_link_selector);
+    var thumbnails = document.querySelectorAll(thumbnailLinkSelector);
     var thumbnailArray = [].slice.call(thumbnails);
     return thumbnailArray;
 }
