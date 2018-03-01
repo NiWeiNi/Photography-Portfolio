@@ -5,31 +5,50 @@ html, body {
 
 body {
     display: flex;
-    flex-direction: column;
 
     font-family: 'Raleway', sans-serif;
-    background-color: #7d97ad;
+
+    ***: #7d97ad;
 }
 
 
 /* Flex containers */
 
+.margin-left {
+    width: 15%;
+}
+
+.margin-right {
+    width: 15%;
+    order: 3;
+}
+
+.container {
+    height: 100%;
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
 .main-header {
     display: flex;
     flex-direction: column;
-    background-color: brown;
     flex-flow: row wrap;
     order: -1;
     align-items: center;
-
+    margin: 15px 0;
     width: 100%;
+
+    ***: brown;
 }
 
 .main-content {
     display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
-    background-color: goldenrod;
+    flex: 1 1 auto;
+
+    ***: goldenrod;
 }
 
 .featured{
@@ -39,34 +58,37 @@ body {
 
 .secondary-header {
     width: 100%;
-    background-color: pink;
     display: flex;
+
+    ***: pink;
 }
 
 .thumbnail-list {
-    background-color: rgb(196, 117, 193);
     list-style: none;
     display: flex;
     justify-content: space-between;
-    flex: 0 1 auto;
+    flex: 0 1 220px;
+    align-items: center;
+    padding: 10px;
 
     white-space: nowrap;
     overflow-x: auto;
+
+    ***: rgb(196, 117, 193);
 
 }
 
 .thumbnail-item {
     display: flex;
     flex-direction: column;
-    min-width: 150px;
+
+    min-width: 120px;
     max-width: 150px;
-    max-height: 100px;
 
     text-align: center;
 }
 
 .detail-image-container {
-    background-color: olive;
     flex-direction: column;
     display: flex;
     flex: 1 1 auto;
@@ -74,30 +96,32 @@ body {
     align-items: center;
     order: -1;
     margin-top: 10px;
-    flex: 1;
     text-align: left;
+
+    ***: olive;
 }
 
 
 /* Element styles */
 
 .logo {
-    background-color: blanchedalmond;
     align-items: center;
     order: -1;
     width: 50%;
+
+    ***: blanchedalmond;
 }
 
 .logo-image {
-    height: 70px;
-    width: 70px;
+    height: 55px;
 }
 
 .header-text {
     width: 50%;
-    background-color: aquamarine;
     color: #2d3c49;
     text-align: right;
+
+    ***: aquamarine;
 }
 
 .name-text, .role-text{
@@ -108,15 +132,18 @@ body {
 
 .ruler {
     width: 100%;
-    height: 5px;
-    background-color: #7d97ad;
+    height: 2px;
     margin: 0;
     order: 4;
+    margin: 10px 0;
+
+    background-color: #8c2e33;
 }
 
 .secondary-text {
-    color: #7d97ad;
+    color: #8c2e33;
     font-size: 20px;
+    text-transform: uppercase;
     margin-bottom: 0;
 }
 
@@ -131,6 +158,12 @@ body {
     padding: 10px;
 }
 
-.thumbnail-image {
-    width: 100%;
+.thumbnail-image-horizontal {
+    width: 150px;
+    height: 100px;
+}
+
+.thumbnail-image-vertical {
+    width: 120px;
+    height: 150px;
 }
