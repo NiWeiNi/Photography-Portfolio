@@ -69,7 +69,6 @@ body {
     justify-content: space-between;
     flex: 0 1 220px;
     align-items: center;
-    padding: 10px;
 
     white-space: nowrap;
     overflow-x: auto;
@@ -84,6 +83,7 @@ body {
 
     min-width: 120px;
     max-width: 150px;
+    padding: 10px;
 
     text-align: center;
 }
@@ -150,8 +150,7 @@ body {
 .detail-image {
     width: 40%;
     height: auto;
-
-}
+ }
 
 .detail-image-title {
     font-size: 25px;
