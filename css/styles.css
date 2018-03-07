@@ -362,7 +362,7 @@ body {
     .header-text {
         text-align: center;
         padding-top: 10px;
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     .role-text::before {
@@ -383,7 +383,7 @@ body {
     }
 
     .secondary-text {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .main-content {
@@ -404,6 +404,10 @@ body {
         list-style-type: none;
         margin: 0;
         padding: 0;
+    }
+
+    .main-content ul li:last-child {
+        margin-bottom: 20px;
     }
 
     .thumbnail-item {
@@ -430,7 +434,7 @@ body {
     }
 
     .thumbnail-title {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     .detail-image-container {
