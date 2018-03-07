@@ -398,6 +398,7 @@ body {
         display: flex;
         flex-flow: column nowrap;
         overflow: auto;
+        -webkit-overflow-scrolling: touch;
         flex: 1 0 auto;
 
         list-style-type: none;
