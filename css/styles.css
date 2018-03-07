@@ -8,9 +8,96 @@ body {
     background-color: #7d97ad;
 }
 
+
+@media screen and (max-width: 426px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-size: .5em;
+    }
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        align-items: center;
+    }
+
+    .header-text {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 1.5em;
+    }
+
+    .role-text::before {
+        content: " · ";
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    hr {
+        border: 0.05em solid #8c2e33;
+        width: 100%;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .thumbnail-list {
+        display: flex;
+        flex-flow: column nowrap;
+        overflow-y: hidden;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        
+        padding: 0;
+        
+        background-color: bisque;
+    }
+
+    .thumbnail-item {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    li + li {
+        padding-top: 15px;
+    }
+
+    .thumbnail-image-horizontal {
+        width: 100%;
+        height: auto;
+    }
+
+    .thumbnail-image-vertical {
+        width: 100%;
+        height: auto;
+    }
+
+    .thumbnail-title {
+        font-size: 1.3em;
+    }
+
+    .detail-image-container {
+        display: none;
+    }
+}
+
+/* 
 @media screen and (min-width: 1200px) {
-    
-    /* Flex containers */
 
     .margin-left {
         width: 15%;
@@ -96,8 +183,6 @@ body {
         background-color: olive;
     }
 
-    /* Hide detail image while scrolling thumbnails */
-
     .hidden-detail .detail-image-container {
         display: none;
     }
@@ -110,8 +195,6 @@ body {
     .hidden-detail .thumbnail-item {
         max-width: 80%;
     }
-
-    /* Element styles */
 
     .logo {
         align-items: center;
@@ -179,10 +262,10 @@ body {
     ul li span {
         font-size: 0.8em;
     }
-}
+} */
 
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+/* @media screen and (min-width: 768px) and (max-width: 1199px) {
     .main-content {
         flex-direction: row;
         overflow: hidden;
@@ -200,18 +283,4 @@ body {
     .secondary-header {
         width: 20%;
     }
-}
-
-@media screen and (max-width: 425px) {
-    .main-header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    hr {
-        border: 1px solid black;
-        width: 100%;
-    }
-
-
-}
+} */
