@@ -10,7 +10,6 @@ html, body {
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #7d97ad;
 }
 
 @media screen and (min-width: 1200px) {
@@ -352,10 +351,7 @@ body {
         flex-direction: column;
         flex: 0 1 85px;
         align-items: center;
-        padding: 10px;
-
-        background-color: aliceblue;
-    
+        padding: 10px;    
     }
 
     .header-text {
@@ -390,7 +386,7 @@ body {
       flex-direction: column;
       overflow: auto;
       height: 100%;
-      padding: 10px;
+      padding: 0 10px;
     }
 
     .thumbnail-list {
@@ -398,13 +394,10 @@ body {
         flex-flow: column nowrap;
         overflow: auto;
         flex: 1 0 auto;
-        min-height: min-content;
 
         list-style-type: none;
         margin: 0;
         padding: 0;
-        
-        background-color: bisque;
     }
 
     .thumbnail-item {
@@ -414,18 +407,20 @@ body {
         max-width: 100%;
     }
 
+    .thumbnail-title {
+        padding-top: 4px;
+    }
+
     li + li {
         padding-top: 15px;
     }
 
     .thumbnail-image-horizontal {
         width: 100%;
-        height: auto;
     }
 
     .thumbnail-image-vertical {
         width: 100%;
-        height: auto;
     }
 
     .thumbnail-title {
@@ -448,9 +443,7 @@ body {
         align-content: center;
         justify-content: space-around;
         padding: 0;
-        margin-top: 0;
-
-        background-color: rgba(255, 255, 255, 0.50);
+        margin-top: 5px;
     }
 
     footer ul li {
