@@ -14,9 +14,9 @@ module.exports = function(grunt) {
         options: {
           sizes: [{
 
-            width: 600,
+            width: 740,
             suffix: "-BW",
-            quality: 30
+            quality: 50
       
           }]
         },
@@ -28,8 +28,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['*.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          cwd: 'img_src/',
+          dest: 'img/'
         }]
       }
     },
