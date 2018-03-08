@@ -559,7 +559,7 @@ body {
 
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 0 10px;
     }
 
     .main-content ul li:last-child {
@@ -600,7 +600,7 @@ body {
     .secondary-text {
         font-size: 1.1em;
         text-align: left;  
-        padding: 10px 0; 
+        padding: 10px 0 10px 10px; 
     }
 
     footer {
