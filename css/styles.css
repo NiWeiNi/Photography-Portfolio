@@ -139,23 +139,20 @@ body {
     }
 
     .text-container {
+        display: flex;
         flex-direction: column;
-        position: relative;
-        text-align: center;
-        background-color: indianred;
+        align-items: center;  
+        text-align: left;
     }
     
     .detail-image {
-        width: 50%;
+        width: 55%;
         box-shadow: 8px 8px 8px rgb(189, 189, 189);
     }
 
     .detail-image-title {
-        position: absolute;
-        left: 10px;
-        bottom: 0;
+        padding-top: 10px;
         font-size: 0.9em;
-        display: none;
     }
 
     .secondary-text {
@@ -196,7 +193,7 @@ body {
 } 
 
 
-@media screen and (min-width: 500px) and (max-width: 1279px) {
+@media screen and (min-width: 500px) and (max-width: 1280px) {
     .margin-left {
         width: 15%;
     }
@@ -315,11 +312,6 @@ body {
         justify-content: center;
         align-items: center;
         order: -1;
-        text-align: left;
-    }
-
-    .hidden-detail .thumbnail-item {
-        max-width: 80%;
     }
 
     .secondary-text {
@@ -334,9 +326,16 @@ body {
         box-shadow: 8px 8px 8px rgb(189, 189, 189);
     }
 
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
     .detail-image-title {
-        font-size: 1em;
-        padding: 10px;
+        font-size: 0.9em;
+        padding-top: 15px;
     }
 
     footer {
@@ -373,7 +372,7 @@ body {
 } 
 
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 500px) {
 
     .container {
         height: 100%;
