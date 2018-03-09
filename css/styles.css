@@ -156,7 +156,7 @@ body {
     
     .detail-image {
         width: 50%;
-        box-shadow: 8px 8px 8px rgb(189, 189, 189);
+        box-shadow: 5px 5px 5px rgb(189, 189, 189);
     }
 
     .detail-image-title {
@@ -306,7 +306,7 @@ body {
 
     .detail-image {
         width: 40%;
-        box-shadow: 8px 8px 8px rgb(189, 189, 189);
+        box-shadow: 5px 5px 5px rgb(189, 189, 189);
     }
 
     .text-container {
@@ -548,6 +548,7 @@ body {
       overflow: auto;
       height: 100%;
       padding: 0 10px;
+      -webkit-overflow-scrolling: touch;    
     }
 
     .thumbnail-list {

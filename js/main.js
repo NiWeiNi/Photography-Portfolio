@@ -1,15 +1,17 @@
 const detailImageSelector = '[data-role="target"]';
 const detailTitleSelector = '[data-title="title"]';
 const thumbnailLinkSelector = '[data-role="trigger"]';
+const thumbnailHorizontal = '[thumbnail-image-horizontal]';
+const thumbnailVertical = '[thumbnail-image-vertical]';
 
 // Set image and text of the detailed photo
 
 function setDetails(imageUrl, titleText) {
     'use strict';
-    var detailImage = document.querySelector(detailImageSelector);
+    let detailImage = document.querySelector(detailImageSelector);
     detailImage.setAttribute('src', imageUrl);
 
-    var detailTitle = document.querySelector(detailTitleSelector);
+    let detailTitle = document.querySelector(detailTitleSelector);
     detailTitle.textContent = titleText;
 }
 
@@ -38,14 +40,14 @@ function addThumbClickHandler(thumb) {
 
 function getThumbnailsArray() {
     'use strict';
-    var thumbnails = document.querySelectorAll(thumbnailLinkSelector);
-    var thumbnailArray = [].slice.call(thumbnails);
+    let thumbnails = document.querySelectorAll(thumbnailLinkSelector);
+    let thumbnailArray = [].slice.call(thumbnails);
     return thumbnailArray;
 }
 
 function initializeEvents() {
     'use strict';
-    var thumbnails = getThumbnailsArray();
+    let thumbnails = getThumbnailsArray();
     thumbnails.forEach(addThumbClickHandler);
 }
 
