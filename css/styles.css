@@ -1,3 +1,5 @@
+/* Import font icons */
+
 @font-face {
     font-family: "brands";
     src: url("../fonts/fa-brands-400.eot");
@@ -8,6 +10,8 @@
         font-weight: normal;
         font-style: normal;
 }
+
+/* Common styles to the website */
 
 html, body {
     height: 100%;
