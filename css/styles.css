@@ -208,6 +208,7 @@ body {
         align-items: center;
         margin: 0;
         width: 100%;
+        padding-top: 10px;
     }
     
     hr {
@@ -278,7 +279,7 @@ body {
     }
 
     .thumbnail-image-horizontal {
-        width: 120px;
+        width: 140px;
         height: 90px;
         padding: 0 5px;
     }
@@ -369,43 +370,45 @@ body {
         order: -1;
         align-items: center;
         margin: 0;
+        padding: 10px 0 0 0;
         width: 100%;
     }
     
     hr {
         border: 0.02em solid #8c2e33;
         width: 100%;
+        margin: 5px 0;
     }
 
     .logo {
         align-items: center;
         order: -1;
-        width: 50%;
+        width: 10%;
     }
 
     .logo-image {
-        height: 40px;
+        height: 30px;
         padding-left: 20px;
     }
 
     .header-text {
-        width: 50%;
+        width: 90%;
         color: #2d3c49;
         text-align: right;
+        padding-top: 10px;
     }
 
     .name-text, .role-text{
-        padding-right: 20px;
+        font-size: 1em;
         text-transform: uppercase;
-        display: block;
-    }
-
-    .name-text {
-        font-size: 2em;
     }
 
     .role-text {
-        font-size: 0.8em;
+        padding-right: 20px;
+    }
+
+    .role-text::before {
+        content: " · ";
     }
     
     .main-content {
@@ -422,6 +425,7 @@ body {
     .secondary-text {
         text-align: right;
         padding-right: 20px;
+        padding-top: 5px;
     }
 
     .thumbnail-list {
