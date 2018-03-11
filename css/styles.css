@@ -417,6 +417,7 @@ body {
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
+        -webkit-overflow-scrolling: touch; 
     }
 
     .secondary-header {
@@ -441,6 +442,7 @@ body {
 
         white-space: nowrap;
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
     }
 
     .thumbnail-item {
@@ -549,12 +551,12 @@ body {
     }
 
     .main-content {
-      display: flex;
-      flex-direction: column;
-      overflow: auto;
-      height: 100%;
-      padding: 0 10px;
-      -webkit-overflow-scrolling: touch;    
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: 100%;
+        padding: 0 10px;
+        -webkit-overflow-scrolling: touch;    
     }
 
     .thumbnail-list {
