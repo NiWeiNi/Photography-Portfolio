@@ -197,167 +197,6 @@ body {
 } 
 
 @media screen and (min-width: 740px) and (max-width: 1280px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .main-header {
-        display: flex;
-        flex-direction: column;
-        flex-flow: row wrap;
-        order: -1;
-        align-items: center;
-        margin: 0;
-        width: 100%;
-        padding-top: 10px;
-    }
-    
-    hr {
-        border: 0.02em solid #8c2e33;
-        width: 100%;
-    }
-
-    .logo {
-        align-items: center;
-        order: -1;
-        width: 50%;
-    }
-
-    .logo-image {
-        height: 40px;
-        padding-left: 20px;
-    }
-
-    .header-text {
-        width: 50%;
-        color: #2d3c49;
-        text-align: right;
-    }
-
-    .name-text, .role-text{
-        padding-right: 20px;
-        text-transform: uppercase;
-        display: block;
-    }
-
-    .name-text {
-        font-size: 2em;
-    }
-
-    .role-text {
-        font-size: 0.8em;
-    }
-    
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-    }
-
-    .secondary-header {
-        flex: 0 1 auto;
-        order: -1;
-    }
-
-    .thumbnail-list {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        flex: 0 1 auto;
-        align-items: center;
-        margin: 0;
-        padding: 0 15px;
-
-        white-space: nowrap;
-        overflow-x: auto;
-    }
-
-    .thumbnail-item {
-        display: flex;
-        flex-direction: column;
-
-        max-width: 150px;
-    }
-
-    .thumbnail-image-horizontal {
-        width: 140px;
-        height: 90px;
-        padding: 0 5px;
-    }
-
-    .thumbnail-image-vertical {
-        width: 100px;
-        height: 130px;
-        padding: 0 5px;
-    }
-
-    .thumbnail-item span {
-        text-align: left;
-        font-size: 0.8em;
-        padding-left: 5px;
-    }
-
-    .detail-image-container {
-        flex-direction: column;
-        display: flex;
-        flex: 1 1 auto;
-        justify-content: center;
-        align-items: center;
-        order: -1;
-    }
-
-    .detail-image {
-        width: 40%;
-        box-shadow: 5px 5px 5px rgb(189, 189, 189);
-    }
-
-    .text-container {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-    }
-
-    .detail-image-title {
-        font-size: 0.9em;
-    }
-
-    footer {
-        display: none;
-        flex: 1 0 auto;
-        flex-direction: column;
-        width: 10%;
-        background-color: grey;
-    }
-
-    footer ul {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        align-items: center;
-        align-content: center;
-        justify-content: flex-end;
-        padding: 0;
-        margin-top: 5px;
-    }
-
-    footer ul li {
-        padding: 0;
-        width: 25px;
-        padding-left: 27px;
-    }
-
-    footer ul li a {
-        font-family: brands, sans-serif;
-        font-size: 25px;
-        color: #000;
-        text-decoration: none;
-    }
-} 
-
-@media screen and (min-width: 500px) and (max-width: 740px) {
 
     .container {
         display: flex;
@@ -367,6 +206,7 @@ body {
 
     .main-header {
         display: flex;
+        flex: 0 1 50px;
         flex-direction: column;
         flex-flow: row wrap;
         order: -1;
@@ -421,8 +261,9 @@ body {
     }
 
     .secondary-header {
-        padding-left: 15px;
         font-size: .8em;
+        padding: 10px 0 10px 15px;
+        align-content: center;
     }
 
     .secondary-text {
@@ -435,13 +276,12 @@ body {
         list-style: none;
         display: flex;
         justify-content: space-between;
-        flex: 1 1 auto;
+        flex: 0 1 auto;
         align-items: center;
         margin: 0;
         padding: 0 15px;
-
-        white-space: nowrap;
-        overflow-x: auto;
+        flex-wrap: wrap;
+        overflow-y: auto;
         -webkit-overflow-scrolling: touch; 
     }
 
@@ -461,6 +301,159 @@ body {
     .thumbnail-image-vertical {
         width: 160px;
         height: 220px;
+        padding: 0 5px;
+    }
+
+    .thumbnail-item span {
+        text-align: left;
+        font-size: 0.8em;
+        padding-left: 5px;
+    }
+
+    .secondary-text {
+        color: #8c2e33;
+        font-size: .9em;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    
+    .detail-image-container {
+        display: none;
+    }
+
+    footer {
+        flex: 0 1 35px;
+        width: 100%;
+    }
+
+    footer ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        padding: 0;
+        margin-top: 5px;
+    }
+
+    footer ul li {
+        padding: 0;
+        min-width: 25px;
+        max-width: 25px;
+    }
+
+    footer ul li a {
+        font-family: brands, sans-serif;
+        font-size: 25px;
+        color: #000;
+        text-decoration: none;
+    }
+} 
+
+@media screen and (min-width: 500px) and (max-width: 740px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main-header {
+        display: flex;
+        flex: 0 1 50px;
+        flex-direction: column;
+        flex-flow: row wrap;
+        order: -1;
+        align-items: center;
+        margin: 0;
+        padding: 10px 0 0 0;
+        width: 100%;
+    }
+    
+    hr {
+        border: 0.02em solid #8c2e33;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .logo {
+        align-items: center;
+        order: -1;
+        width: 10%;
+    }
+
+    .logo-image {
+        height: 30px;
+        padding-left: 20px;
+    }
+
+    .header-text {
+        width: 90%;
+        color: #2d3c49;
+        text-align: right;
+        padding-top: 10px;
+    }
+
+    .name-text, .role-text{
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+
+    .role-text {
+        padding-right: 20px;
+    }
+
+    .role-text::before {
+        content: " · ";
+    }
+    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    .secondary-header {
+        font-size: .8em;
+        padding: 30px 0 10px 15px;
+    }
+
+    .secondary-text {
+        text-align: right;
+        padding-right: 20px;
+        padding-top: 5px;
+    }
+
+    .thumbnail-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex: 0 1 auto;
+        align-items: center;
+        margin: 0;
+        padding: 0 15px;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    .thumbnail-item {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 400px;
+    }
+
+    .thumbnail-image-horizontal {
+        width: 350px;
+        height: 220px;
+        padding: 0 5px;
+    }
+
+    .thumbnail-image-vertical {
+        width: 220px;
+        height: 290px;
         padding: 0 5px;
     }
 
